@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="100dp">
 
     <ImageView
+        android:id="@+id/img1"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@drawable/smile2"
         android:layout_gravity="center"
-        android:id="@+id/img1"/>
+        android:src="@drawable/smile2" />
 
     <TextView
+        android:id="@+id/t1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/t1"
-        android:textSize="20dp"
         android:text="This is Demo Text"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
