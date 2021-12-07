@@ -9,16 +9,16 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView rcv;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rcv=(RecyclerView)findViewById(R.id.rclview);
+        rcv = (RecyclerView) findViewById(R.id.rclview);
         rcv.setLayoutManager(new LinearLayoutManager(this));
 
-        String arr[]={"C","C++","JAVA","PHP",".NEt","JQuery","C","C++","JAVA","PHP",".NEt","JQuery","C","C++","JAVA","PHP",".NEt","JQuery"};
+        String arr[] = {"C", "C++", "JAVA", "PHP", ".NEt", "JQuery", "C", "C++", "JAVA", "PHP", ".NEt", "JQuery", "C", "C++", "JAVA", "PHP", ".NEt", "JQuery"};
         rcv.setAdapter(new MyAdapter(arr));
 
     }
